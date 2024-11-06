@@ -1,18 +1,12 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   color: #333;
+  background-color: #f3f3f3;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: #f3f3f3;
+  margin: 0;  /* Asegura que no haya margen adicional */
 }
 
 header, footer {
@@ -41,10 +35,12 @@ nav a {
 }
 
 main {
+  flex: 1;  /* Esto permite que el contenido ocupe el espacio disponible */
   display: flex;
-  flex: 1;
   padding: 20px;
   justify-content: center;
+  flex-direction: column;  /* Distribuye los elementos en columna */
+  overflow: auto;  /* Asegura que el contenido extra pueda desplazarse si es necesario */
 }
 
 /* Flexbox y layout responsivo */
@@ -55,6 +51,7 @@ main {
   justify-content: center; /* Centrar los elementos */
 }
 
+/* Contenedor de personajes y productos */
 .character, .product {
   display: flex;
   flex-direction: column;
@@ -64,20 +61,25 @@ main {
   border-radius: 8px;
   background-color: #fff;
   text-align: center;
-  max-width: 200px; /* Limitar el ancho para adaptarse a la imagen y texto */
+  max-width: 230px; /* Aumenta el ancho máximo */
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
-/* Tamaño fijo para las imágenes */
+/* Ajuste de las imágenes */
 .img-fixed {
-  width: 150px; /* Ajusta este valor según el tamaño deseado */
-  height: 150px; /* Ajusta este valor según el tamaño deseado */
-  object-fit: cover;
-  border-radius: 8px;
+  width: 100%;
+  height: 280px; /* Aumenta la altura para hacer las imágenes más grandes */
+  object-fit: contain; /* Cambia a 'contain' para mostrar toda la imagen */
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 10px;
 }
 
-/* Responsividad */
+/* Otros ajustes para centrado y flexbox */
 @media (max-width: 768px) {
   .container {
-    flex-direction: column;
+      flex-direction: column;
+      align-items: center;
   }
 }

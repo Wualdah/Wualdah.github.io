@@ -1,67 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personajes de Harry Potter</title>
-  <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* Animación de fade-in para las imágenes */
-    .character img {
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter - La Saga</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+    <!-- Encabezado -->
+    <header class="sticky">
+      <img src="images/logo.png" alt="Logotipo de Harry Potter" style="height: 50px;">
+      <h1>Harry Potter - La Saga</h1>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="personatges.html">Personajes</a>
+        <a href="productes.html">Productos</a>
+      </nav>
+    </header>
+    <!-- Contenido Principal -->
+    <main>
+        <div class="container">
+            <div class="character">
+                <img src="/images/harry.png" alt="Harry Potter" class="img-fixed">
+                <h2>Harry Potter</h2>
+                <p>El "Niño que Vivió" y el protagonista de la saga.</p>
+            </div>
+            <div class="character">
+                <img src="/images/hermione.png" alt="Hermione Granger" class="img-fixed">
+                <h2>Hermione Granger</h2>
+                <p>La bruja más brillante de su generación y amiga de Harry.</p>
+            </div>
+            <div class="character">
+                <img src="/images/ron.png" alt="Ron Weasley" class="img-fixed">
+                <h2>Ron Weasley</h2>
+                <p>Leal amigo de Harry y Hermione, miembro de la familia Weasley.</p>
+            </div>
+            <div class="character">
+                <img src="/images/dumbledore.png" alt="Albus Dumbledore" class="img-fixed">
+                <h2>Albus Dumbledore</h2>
+                <p>Director de Hogwarts y uno de los magos más poderosos de su tiempo.</p>
+            </div>
+            <div class="character">
+                <img src="/images/voldemort.png" alt="Lord Voldemort" class="img-fixed">
+                <h2>Lord Voldemort</h2>
+                <p>El mago oscuro más temido y enemigo mortal de Harry Potter.</p>
+            </div>
+        </div>
+    </main>
 
-<header class="sticky">
-  <img src="images/logo.png" alt="Logotipo de Harry Potter" style="height: 50px;">
-  <h1>Personajes de Harry Potter</h1>
-  <nav>
-    <a href="index.html">Inicio</a>
-    <a href="personatges.html">Personajes</a>
-    <a href="productes.html">Productos</a>
-  </nav>
-</header>
-
-<main>
-  <section class="container">
-    <div class="character">
-      <h2>Harry Potter</h2>
-      <img src="images/harry.png" alt="Harry Potter" class="img-fixed">
-      <p>El "Niño que Vivió" y el protagonista de la saga.</p>
-    </div>
-    <div class="character">
-      <h2>Hermione Granger</h2>
-      <img src="images/hermione.png" alt="Hermione Granger" class="img-fixed">
-      <p>La bruja más brillante de su generación y amiga de Harry.</p>
-    </div>
-    <div class="character">
-      <h2>Ron Weasley</h2>
-      <img src="images/ron.png" alt="Ron Weasley" class="img-fixed">
-      <p>Leal amigo de Harry y Hermione, miembro de la familia Weasley.</p>
-    </div>
-    <div class="character">
-      <h2>Albus Dumbledore</h2>
-      <img src="images/dumbledore.png" alt="Albus Dumbledore" class="img-fixed">
-      <p>Director de Hogwarts y uno de los magos más poderosos de su tiempo.</p>
-    </div>
-    <div class="character">
-      <h2>Lord Voldemort</h2>
-      <img src="images/voldemort.png" alt="Lord Voldemort" class="img-fixed">
-      <p>El mago oscuro más temido y enemigo mortal de Harry Potter.</p>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <p>&copy; 2023 Sergio Gualda</p>
-</footer>
-
+    <!-- Pie de Página -->
+    <footer>
+        &copy; 2023 Sergio Gualda
+    </footer>
 </body>
 </html>
