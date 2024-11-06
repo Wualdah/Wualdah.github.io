@@ -70,11 +70,13 @@ main {
 /* Ajuste de las imágenes */
 .img-fixed {
   width: 100%;
-  height: 280px; /* Aumenta la altura para hacer las imágenes más grandes */
-  object-fit: contain; /* Cambia a 'contain' para mostrar toda la imagen */
+  height: auto;  /* Esto asegura que la imagen mantenga su relación de aspecto */
+  max-height: 300px;  /* Un valor máximo de altura para evitar que las imágenes se hagan demasiado grandes */
+  object-fit: contain;
   border-radius: 8px 8px 0 0;
   margin-bottom: 10px;
 }
+
 
 /* Otros ajustes para centrado y flexbox */
 @media (max-width: 768px) {
