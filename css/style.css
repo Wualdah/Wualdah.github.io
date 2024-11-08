@@ -6,7 +6,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;  /* Asegura que no haya margen adicional */
+  margin: 0;  
 }
 
 header, footer {
@@ -39,8 +39,8 @@ main {
   display: flex;
   padding: 20px;
   justify-content: center;
-  flex-direction: column;  /* Distribuye los elementos en columna */
-  overflow: auto;  /* Asegura que el contenido extra pueda desplazarse si es necesario */
+  flex-direction: column;  /* Elementos en columna */
+  overflow: auto;  /*Esto hace que el  contenido extra pueda desplazarse si es necesario */
 }
 
 /* Flexbox y layout responsivo */
@@ -61,7 +61,7 @@ main {
   border-radius: 8px;
   background-color: #fff;
   text-align: center;
-  max-width: 230px; /* Aumenta el ancho máximo */
+  max-width: 460px; /* Aumenta el ancho máximo */
   width: 100%;
   overflow: hidden;
   box-sizing: border-box;
@@ -70,7 +70,7 @@ main {
 /* Ajuste de las imágenes */
 .img-fixed {
   width: 100%;
-  height: auto;  /* Esto asegura que la imagen mantenga su relación de aspecto */
+  height: auto;  
   max-height: 300px;  /* Un valor máximo de altura para evitar que las imágenes se hagan demasiado grandes */
   object-fit: contain;
   border-radius: 8px 8px 0 0;
